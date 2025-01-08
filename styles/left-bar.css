@@ -1,0 +1,36 @@
+.left-bar{
+    position: fixed;
+    top: 55px;
+    left: 0px;
+    bottom: 0px;
+    width: 74px;
+    padding-top: 20px;
+    background-color: white;
+    z-index: 200;
+}
+
+.left-bar-icons{
+    height: 76px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-bar-icons:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.left-bar img{
+    height: 25px;
+    margin-bottom: 2px;
+}
+/* 
+不用再给每个img一个class
+*/
+
+.left-bar p{
+    font-size: 10px;
+}

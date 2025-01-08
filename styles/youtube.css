@@ -1,0 +1,65 @@
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+@media (max-width: 800px){/*responsive design 是页面显示数量根据页面大小动态变化*/
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1099px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.video-info-grid{
+    display: grid; 
+    grid-template-columns: 50px 1fr;
+    margin-top: 10px;
+}
+
+.profile-pic{
+    width: 36px; /*the image will take the entire space of the divsion*/
+    border-radius: 50px;
+}
+
+.video-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 4px;
+}
+
+.channel-name{
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.video-stats{
+    font-size: 12px;
+    color: gray;
+    margin-top: -13px;
+}
+
+.thumbnail-row{
+    position: relative;
+}
+
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 6px; /*(4 directions) (vertical, orizontal) (top, right, bottom, left)*/
+    border-radius: 2px;
+}
